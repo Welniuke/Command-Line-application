@@ -13,7 +13,7 @@ namespace Command_Line_Application
             int x = 0;
             decimal zemesRutulioPlatas = 0;
             decimal zemesRutulioTuris = 0;
-            decimal trikampioIzamvine = 0;
+            decimal trikampioIzambine = 0;
         }
     }
 }
