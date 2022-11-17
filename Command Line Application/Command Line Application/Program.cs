@@ -17,8 +17,7 @@ namespace Command_Line_Application
         {
             int pirmaKrastine = 10;
             int antraKrastine = 15;
-            return Math.Pow((Math.Pow((pirmaKrastine), 2) + Math.Pow((pirmaKrastine), 2)), 0.5);
-            ;
+            return Math.Pow((Math.Pow((pirmaKrastine), 2) + Math.Pow((antraKrastine), 2)), 0.5);
         }
         static void Main(string[] args)
         {
