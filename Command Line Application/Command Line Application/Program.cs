@@ -21,9 +21,6 @@ namespace Command_Line_Application
         }
         static void Main(string[] args)
         {
-
-            var program = new Program();
-
             double zemesRutulioPlotas = ZemesRutulioPlotas();
             double zemesRutulioTuris = ZemesRutulioTuris();
             double trikampioIzambine = TrikampioIzambine();
