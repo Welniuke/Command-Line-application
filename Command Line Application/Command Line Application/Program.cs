@@ -8,14 +8,26 @@ namespace Command_Line_Application
 {
     internal class Program
     {
+        private double ZemesRutulioPlatas()
+        {
+            int zemesSpindulys = 6371;
+            return 4 * Math.PI * Math.Pow((zemesSpindulys), 2);
+        }
+        private double TrikampioIzambine()
+        {
+            int pirmaKrastine = 10;
+            int antraKrastine = 15;
+            return Math.Pow((Math.Pow((pirmaKrastine), 2) + Math.Pow((pirmaKrastine), 2)), 0.5);
+            ;
+        }
         static void Main(string[] args)
         {
-            int test = 1;
 
-            int x = 0;
-            decimal zemesRutulioPlatas = 0;
+            var program = new Program();
+
+            double zemesRutulioPlatas = program.ZemesRutulioPlatas();
             decimal zemesRutulioTuris = 0;
-            decimal trikampioIzambine = 0;
+            double trikampioIzambine = program.TrikampioIzambine();
         }
     }
 }
