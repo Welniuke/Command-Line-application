@@ -12,6 +12,7 @@ namespace Command_Line_Application
         {
             int test = 1;
 
+            int x = 0;
             decimal zemesRutulioPlatas = 0;
             decimal zemesRutulioTuris = 0;
             decimal trikampioIzambine = 0;
