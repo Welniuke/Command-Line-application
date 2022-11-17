@@ -10,7 +10,7 @@ namespace Command_Line_Application
     {
         static void Main(string[] args)
         {
-
+            int x = 0;
             decimal zemesRutulioPlatas = 0;
             decimal zemesRutulioTuris = 0;
             decimal trikampioIzamvine = 0;
