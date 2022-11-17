@@ -27,10 +27,10 @@ namespace Command_Line_Application
 
             double zemesRutulioPlotas = ZemesRutulioPlotas();
             double zemesRutulioTuris = ZemesRutulioTuris();
-            double trikampioIzambine = Math.Sqrt(TrikampioIzambine());
+            double trikampioIzambine = TrikampioIzambine();
 
-            decimal kintamujuSuma = zemesRutulioPlotas + zemesRutulioTuris + trikampioIzambine;
-            decimal kintamujuVidurkis = kintamujuSuma / 3;
+            double kintamujuSuma = zemesRutulioPlotas + zemesRutulioTuris + trikampioIzambine;
+            double kintamujuVidurkis = kintamujuSuma / 3;
 
             Console.WriteLine("Zemes rutulio plotas: {0} \n", zemesRutulioPlotas.ToString("N"));
             Console.WriteLine("Zemes rutulio turis: {0} \n", zemesRutulioTuris.ToString("N"));
@@ -41,10 +41,10 @@ namespace Command_Line_Application
             Console.Read();
         }
 
-        //private static decimal ZemesRutulioTuris()
-        //{
-        //    return ((4 * (decimal)Math.PI * (decimal)Math.Pow(6371, 3)) / 3);
-        //}
+        private static double ZemesRutulioTuris()
+        {
+            return ((4 * Math.PI * Math.Pow(6371, 3)) / 3);
+        }
         //private static decimal TrikampioIzambine()
         //{
         //    return ((decimal)Math.Pow(10, 2) + (decimal)Math.Pow(15, 2));
