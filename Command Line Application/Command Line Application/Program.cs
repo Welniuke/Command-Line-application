@@ -8,12 +8,26 @@ namespace Command_Line_Application
 {
     internal class Program
     {
+        private static double ZemesRutulioPlotas()
+        {
+            int zemesSpindulys = 6371;
+            return 4 * Math.PI * Math.Pow((zemesSpindulys), 2);
+        }
+        private static double TrikampioIzambine()
+        {
+            int pirmaKrastine = 10;
+            int antraKrastine = 15;
+            return Math.Pow((Math.Pow((pirmaKrastine), 2) + Math.Pow((pirmaKrastine), 2)), 0.5);
+            ;
+        }
         static void Main(string[] args)
         {
 
-            decimal zemesRutulioPlotas = ZemesRutulioPlotas();
-            decimal zemesRutulioTuris = ZemesRutulioTuris();
-            decimal trikampioIzambine = Convert.ToDecimal(Math.Sqrt((double)TrikampioIzambine()));
+            var program = new Program();
+
+            double zemesRutulioPlotas = ZemesRutulioPlotas();
+            double zemesRutulioTuris = ZemesRutulioTuris();
+            double trikampioIzambine = Math.Sqrt(TrikampioIzambine());
 
             decimal kintamujuSuma = zemesRutulioPlotas + zemesRutulioTuris + trikampioIzambine;
             decimal kintamujuVidurkis = kintamujuSuma / 3;
@@ -27,17 +41,17 @@ namespace Command_Line_Application
             Console.Read();
         }
 
-        private static decimal ZemesRutulioTuris()
-        {
-            return ((4 * (decimal)Math.PI * (decimal)Math.Pow(6371, 3)) / 3);
-        }
-        private static decimal TrikampioIzambine()
-        {
-            return ((decimal)Math.Pow(10, 2) + (decimal)Math.Pow(15, 2));
-        }
-        private static decimal ZemesRutulioPlotas()
-        {
-            return (4 * (decimal)Math.PI * (decimal)Math.Pow(6371, 2));
-        }
+        //private static decimal ZemesRutulioTuris()
+        //{
+        //    return ((4 * (decimal)Math.PI * (decimal)Math.Pow(6371, 3)) / 3);
+        //}
+        //private static decimal TrikampioIzambine()
+        //{
+        //    return ((decimal)Math.Pow(10, 2) + (decimal)Math.Pow(15, 2));
+        //}
+        //private static decimal ZemesRutulioPlotas()
+        //{
+        //    return (4 * (decimal)Math.PI * (decimal)Math.Pow(6371, 2));
+        //}
     }
 }
